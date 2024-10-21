@@ -499,12 +499,6 @@ ul{
 .Sub-form:hover{
     background: black;
 }
-/* .form-cont{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-} */
 .form-cont form textarea{
     width: 20%;
     padding: 12px 15px;
