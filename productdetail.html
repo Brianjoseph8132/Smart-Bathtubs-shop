@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART BATHTUB STORE</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./img/logo (3).png" alt="" width="90px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./home.html">HOME</a></li>
+                        <li><a href="./shop.html">PRODUCTS</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                        <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="page-header">
+        <h2>#stayhome</h2>
+        <marquee>Save more with coupons & up to 70% off!</marquee>
+    </div>
+    <!-- single detail product -->
+    <div class="single-product">
+        <div class="law">
+            <img src="./img/ Polished Chrome.jpeg" width="100%">
+            <div class="col-5">
+                <h1>Polished Chrome</h1>
+                <h4>$950.000</h4>
+                <input type="number" value="1"><br><br>
+                <a href="" class="toothpick">Add To Cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- comment section for a product -->
+    <div class="form-cont">
+        <div class="formist">
+            <form action="#" id="formist">
+                <textarea name="message" placeholder="Write a comment" id="comment_input"></textarea><br>
+                <button class="Sub-form" type="submit" id="new_comment">Add Comment</button>
+            </form>
+        </div>
+        <div id="comment_list">
+            <!-- the comment will appear here -->
+        </div>        
+    </div>
+    <!-- products -->
+    <div class="small-container">
+        <h2 class="title">Related Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="./img/Alcove Install.jpeg" alt="">
+                <h4>Alcove Install</h4>
+                <p>$900.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./img/Homary.jpeg" alt="">
+                <h4>Homary</h4>
+                <p>$1000.00</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright &copy;2024:All Rights Reserved</p>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./product.js"></script>
+</body>
+</html>

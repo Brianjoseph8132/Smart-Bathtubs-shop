@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART BATHTUB STORE</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./img/logo (3).png" alt="" width="90px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./home.html">HOME</a></li>
+                        <li><a href="./shop.html">PRODUCTS</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                        <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="page-header">
+        <h2>#stayhome</h2>
+        <marquee>Save more with coupons & up to 70% off!</marquee>
+    </div>
+    <!-- add post -->
+    <div class="cont">
+        <div class="cont-name p-2 mt-1" style="width: 50vw;">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                ADD POST
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Add Post</h5>
+                            <div id="message" class="text-success" role="alert">
+                                <!-- This is where the success message will be displayed -->
+                            </div>
+                            <form id="add_post_form" class="add_post_form">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Enter Title" id="title" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Image URL" id="imageURL" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="number" class="form-control" placeholder="Price" id="price" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- edit post -->
+    <div id="edit_container" class="mx-auto mt-2 p-3" style="width: 50vw; background-color: white;">
+        <!-- edit form will appear here -->
+    </div>
+
+    <!-- post -->
+    <div id="list">
+        <div id="delete_message" class="text-success" role="alert">
+            <!-- This is where the delete successfully message will be displayed -->
+        </div>
+        <div id="bathtub_low" class="low">
+            <!-- This is where the bathtub posts will be displayed -->
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright &copy;2024:All Rights Reserved</p>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

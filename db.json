@@ -1,0 +1,22 @@
+{
+  "bathtub": [
+    {
+      "id": "1",
+      "title": "Alcove Install",
+      "price": "$900.00",
+      "imageURL": "./img/Alcove Install.jpeg"
+    },
+    {
+      "id": "2",
+      "title": "Homary",
+      "price": "$1000.00",
+      "imageURL": "./img/Homary.jpeg"
+    },
+    {
+      "id": "3",
+      "title": "Polished Chrome",
+      "price": "$950.00",
+      "imageURL": "./img/ Polished Chrome.jpeg"
+    }
+  ]
+}
