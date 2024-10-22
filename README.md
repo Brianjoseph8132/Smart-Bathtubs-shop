@@ -12,8 +12,8 @@ A smart bathtub  web application where u can get the luxurious bathtubs.
 * And you are all done
 
 ## Live server
-You can view the web live on ()
-The render link ()
+You can view the web live on (https://brianjoseph8132.github.io/Smart-Bathtubs-shop/)
+The render link (https://smart-bathtubs-shop-1.onrender.com)
 
 ## problem faced 
 The application works perfectly well, no bugs.
