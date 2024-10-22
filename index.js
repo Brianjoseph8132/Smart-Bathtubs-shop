@@ -1,6 +1,6 @@
 
 // Fetch all posts from the server
-fetch('https://smart-bathtubs-shop.onrender.com/bathtub')
+fetch('http://localhost:3000/bathtub')
   .then((response) => response.json())
   .then((data) => {
     console.log(data); // Log the response data for debugging purposes
@@ -42,7 +42,7 @@ add_form.addEventListener("submit", (event) => {
 
   console.log(title, image, price);
   
-  fetch('https://smart-bathtubs-shop.onrender.com/bathtub', { 
+  fetch('http://localhost:3000/bathtub', { 
     method: 'POST',
     body: JSON.stringify({
       title: title,
@@ -68,7 +68,7 @@ add_form.addEventListener("submit", (event) => {
 
 // delete post
 function deletePost(id) {
-  fetch(`https://smart-bathtubs-shop.onrender.com/bathtub/${id}`, {
+  fetch(`http://localhost:3000/bathtub/${id}`, {
     method: 'DELETE',
   })
   .then((res) => res.json())
@@ -85,7 +85,7 @@ function deletePost(id) {
 
 // edit post
 function editPost(id) {
-  fetch(`https://smart-bathtubs-shop.onrender.com/bathtub/${id}`)
+  fetch(`http://localhost:3000/bathtub/${id}`)
     .then((response) => response.json())
     .then((data) => {
       const edit_container = document.getElementById("edit_container");
@@ -121,7 +121,7 @@ function editPost(id) {
         console.log(title, image, price);
 
         
-        fetch(`https://smart-bathtubs-shop.onrender.com/bathtub/${id}`, {
+        fetch(`http://localhost:3000/bathtub/${id}`, {
           method: 'PATCH',
           body: JSON.stringify({
             title: title,
